@@ -1,0 +1,23 @@
+-----------
+2025-01-13:
+-----------
+
+These are the CM1 input files used for the simulations presented in this paper.
+Note, the version of CM1 is cm1r21.0.
+
+The version of the P3 scheme used, along with the necessary modified CM1 interface
+files are available on the Zenodo link that is referenced in the data availability section.
+
+- The file 'input_sounding' is for the Calgary hailstorm case described in the paper.
+
+- The file 'namelist.input' is the CM1 namelist file used for each simluation in the paper
+  but with the following changes for the various configuations of P3:
+
+ PTYPE   CONFIGURATION
+
+   53    2-mom-cld,  2-mom-rain,  3-mom-ice,  1-ice-category
+   60    2-mom-cld,  2-mom-rain,  3-mom-ice,  1-ice-category,  liq-frac
+   61    2-mom-cld,  2-mom-rain,  3-mom-ice,  2-ice-category,  liq-frac
+   62    2-mom-cld,  2-mom-rain,  3-mom-ice,  3-ice-category,  liq-frac
+   63    2-mom-cld,  2-mom-rain,  3-mom-ice,  4-ice-category,  liq-frac
+
